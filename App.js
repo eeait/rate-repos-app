@@ -1,21 +1,10 @@
-import { StatusBar } from "expo-status-bar"
-import { useState } from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { NativeRouter } from "react-router-native"
+import Main from "./src/components/Main"
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-})
+const App = () => (
+  <NativeRouter>
+    <Main />
+  </NativeRouter>
+)
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Bye, world</Text>
-      <StatusBar style="auto" />
-    </View>
-  )
-}
+export default App

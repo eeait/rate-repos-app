@@ -24,7 +24,9 @@ module.exports = {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
-    "no-unused-vars": "off"
+    "react/function-component-definition": "off",
+    "no-unused-vars": "off",
+    "no-console": 0,
   },
   settings: {
     react: {
