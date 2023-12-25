@@ -47,18 +47,13 @@ const styles = StyleSheet.create({
   },
 })
 
-const Language = ({ language }) => {
-  console.log()
-  return (
+const Language = ({ language }) => (
     <View style={styles.languageBox}>
       <Text style={{ color: "#ffffff" }}>{language}</Text>
     </View>
   )
-}
 
-const InfoBox = ({ url, fullName, description, language }) => {
-  console.log()
-  return (
+const InfoBox = ({ url, fullName, description, language }) => (
     <View style={styles.infoContainer}>
       <Image
         style={styles.avatar}
@@ -75,16 +70,13 @@ const InfoBox = ({ url, fullName, description, language }) => {
       </View>
     </View>
   )
-}
 
 const round = (number) => {
   if (number <= 1000) return number
   return `${(number / 1000).toFixed(1)}k`
 }
 
-const Detail = ({ number, text }) => {
-  console.log()
-  return (
+const Detail = ({ number, text }) => (
     <View style={styles.detail}>
       <Text p="2" style={styles.textRow}>
         {round(number)}
@@ -92,11 +84,8 @@ const Detail = ({ number, text }) => {
       <Text style={styles.textRow}>{text}</Text>
     </View>
   )
-}
 
-const DetailBar = ({ stars, forks, reviews, rating }) => {
-  console.log()
-  return (
+const DetailBar = ({ stars, forks, reviews, rating }) => (
     <View style={styles.flexContainer}>
       <Detail number={stars} text="stars" />
       <Detail number={forks} text="forks" />
@@ -104,7 +93,6 @@ const DetailBar = ({ stars, forks, reviews, rating }) => {
       <Detail number={rating} text="rating" />
     </View>
   )
-}
 
 const Item = ({ repo }) => (
   <View style={styles.container}>

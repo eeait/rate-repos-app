@@ -29,7 +29,7 @@ const AppBar = () => {
     authStorage.removeAccessToken()
     apolloClient.resetStore()
   }
-  console.log(data)
+  // console.log(data)
   return (
     <View style={styles.container}>
       {/* <Text>{data}</Text> */}
